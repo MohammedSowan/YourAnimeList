@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background3">
+
+    <EditText
+
+        android:id="@+id/AnimeTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_text"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center_horizontal"
+        android:hint="Anime title"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/animeGenreContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/rounded_text"
+        android:layout_margin="10dp"
+        android:hint="Episodes"
+        android:gravity="center_horizontal"
+        android:id="@+id/animeEpisodesContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/animeRatingContainer"
+        app:layout_constraintTop_toBottomOf="@+id/AnimeTitleContainer"
+        android:layout_width="190dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_text"
+        android:hint="Rating/10"
+        android:gravity="center_horizontal"
+        android:id="@+id/animeRatingContainer"
+        app:layout_constraintStart_toEndOf="@+id/animeEpisodesContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnimeTitleContainer"
+        android:layout_width="190dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_text"
+
+        android:hint="Description"
+        android:gravity="center_horizontal"
+        android:id="@+id/animeDescriptionContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animeEpisodesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+
+    <EditText
+        android:id="@+id/animeGenreContainer"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_text"
+        android:gravity="center_horizontal"
+        android:hint="Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animeDescriptionContainer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rounded_button"
+        android:id="@+id/btnAddAnime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Add an Anime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnimeTitleContainer"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

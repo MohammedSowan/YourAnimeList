@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity"
+    android:background="@drawable/backround">
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textSize="15dp"
+        android:hint="edit username"
+        android:id="@+id/usernameEditText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rounded_button"
+        android:id="@+id/changeUsername"
+        android:layout_width="90dp"
+        android:layout_height="30sp"
+        android:layout_centerHorizontal="true"
+        android:text="edi username"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/change_image"
+        app:layout_constraintStart_toEndOf="@+id/usernameEditText"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rounded_button"
+        android:id="@+id/change_image"
+        android:layout_width="90dp"
+        android:layout_height="30sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp"
+        android:text="edit image"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileImage"
+        app:layout_constraintStart_toEndOf="@+id/usernameEditText"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! what would you like to do today?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rounded_button"
+        android:id="@+id/List1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintEnd_toEndOf="@id/List2Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:text="visit list 1"
+        android:textSize="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/glideImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/List2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="visit list 2"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/List1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

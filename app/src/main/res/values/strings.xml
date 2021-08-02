@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Your Anime List</string>
+    <string name="permissionText">permission to read external storage and use camera is need to being able to change your profile image</string>
+    <string name="PermissionTitle">Permission required!</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">OK</string>
+</resources>

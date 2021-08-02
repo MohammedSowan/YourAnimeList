@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    android:background="@color/white"
+    tools:context=".activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/animeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="JoJo's Bizzare Adventure"
+            android:textSize="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Episodes: 149"
+            android:id="@+id/animeEpisodes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animeTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/animeRating"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="rating: 4.8/5"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/animeEpisodes"
+            app:layout_constraintTop_toBottomOf="@+id/animeTitle" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/animeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/animeEpisodes"
+            app:layout_constraintBottom_toTopOf="@+id/animeGenre"
+            android:textSize="15dp"
+            android:text="description: JoJo's Bizarre Adventure tells the story of the Joestar family, a family whose various members discover they are destined to take down supernatural foes using powers that they possess. "
+            />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="genre: Fantasy, shonen, occlut Fiction, bizzare, Adventure fiction"
+            android:id="@+id/animeGenre"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animeDescription"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
